@@ -16,8 +16,7 @@ typedef struct linearindex{
   int offset;
 }elemIndex;
 
-void bubble(elemIndex v[], int qtd )
-{
+void bubble(elemIndex v[], int qtd ) {
   int i;
   int j;
   int aux;
@@ -38,8 +37,7 @@ void bubble(elemIndex v[], int qtd )
   }
 }
 
-int main (){
-
+int main () {
   elemIndex Indice;
   char file_name[30];
   char buffer[512];
@@ -65,6 +63,7 @@ int main (){
   bubble (vetor, 100);
 
   for (i = 0; i <= 99; i++)
-  printf ("\n%i", vetor[i].ID);
+    printf ("\n%i", vetor[i].ID);
 
+  return 0;
 }
